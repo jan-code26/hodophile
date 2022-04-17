@@ -1,0 +1,119 @@
+
+
+.navbar-brand {
+  width: 50px;
+  font-size: 24px;
+}
+.navbar-brand img {
+  height: 50px;
+  /* put value of image height as your need */
+  float: left;
+  margin-right: 7px;
+}
+.logo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  padding-top: 5px;
+}
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg1.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+.navbar-toggler {
+  background-color: rgb(104, 199, 187);
+  border-radius: 0%;
+  cursor: pointer;
+}
+li {
+  font-size: medium;
+  padding-right: 80px;
+}
+.home {
+  background-color: rgb(104, 199, 187);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+input[type="text"]:focus {
+  border: 2px solid;
+  border-radius: 4px;
+}
+select:focus {
+  border: 2px solid;
+  border-radius: 4px;
+}
+.cimg {
+  width: 100%;
+  height: 400px;
+}
+.nav-link,
+.logo {
+  color: #000;
+}
+.nav-link:hover {
+  color: rgb(104, 199, 187);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgb(18, 168, 146);
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgb(19, 20, 20);
+}
+.cimg{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contain:hover .cimg {
+  opacity: 0.3;
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: rgb(104, 199, 187);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+@media screen and (max-width: 760) {
+  body {
+    font-size: xx-small;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: auto;
+  }
+  .logo {
+    font-size: xx-small;
+  }
+  
+}
+
